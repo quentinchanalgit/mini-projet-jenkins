@@ -11,11 +11,11 @@ pipeline {
         DOCKERHUB_ID = "quentin69780"
         DOCKERHUB_PASSWORD = credentials('dockerhub_password')
         APP_NAME = "quentin"
-        STG_API_ENDPOINT = "ip10-0-1-6-coaj6rlcd84000bsl2og-1993.direct.docker.labs.eazytraining.fr"
-        STG_APP_ENDPOINT = "ip10-0-1-6-coaj6rlcd84000bsl2og-8080.direct.docker.labs.eazytraining.fr"
-        PROD_API_ENDPOINT = "ip10-0-1-6-coaj6rlcd84000bsl2og-1993.direct.docker.labs.eazytraining.fr"
-        PROD_APP_ENDPOINT = "ip10-0-1-6-coaj6rlcd84000bsl2og-80.direct.docker.labs.eazytraining.fr"
-        INTERNAL_PORT = "80"
+        STG_API_ENDPOINT = "ip10-0-1-4-coug1cdcd84000du2q10-1993.direct.docker.labs.eazytraining.fr"
+        STG_APP_ENDPOINT = "ip10-0-1-4-coug1cdcd84000du2q10-8080.direct.docker.labs.eazytraining.fr"
+        PROD_API_ENDPOINT = "ip10-0-1-4-coug1cdcd84000du2q10-1993.direct.docker.labs.eazytraining.fr"
+        PROD_APP_ENDPOINT = "ip10-0-1-4-coug1cdcd84000du2q10-80.direct.docker.labs.eazytraining.fr"
+        INTERNAL_PORT = "5000"
         EXTERNAL_PORT = "${PORT_EXPOSED}"
         CONTAINER_IMAGE = "${DOCKERHUB_ID}/${IMAGE_NAME}:${IMAGE_TAG}"
     }
